@@ -1,14 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import './App.scss';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Header from './components/header/Header';
 
-function App() {
-  const [count, setCount] = useState(0)
+
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#3E88AA',
+    },
+    secondary: {
+      main: '#2EE0CE',
+    },
+  }
+
+});
+
+const  App = () => {
 
   return (
-    <div className="App">
+    <>
+    <ThemeProvider theme={theme}>
+    <Header/>
+    </ThemeProvider>
 
-    </div>
+    </>
   )
 }
 
