@@ -20,7 +20,10 @@ const theme = createTheme({
     ].join(','),
     h6:{
       fontWeight:500,
-    }
+    },
+    h5:{
+      fontWeight:700,
+    },
   },
 
 });
