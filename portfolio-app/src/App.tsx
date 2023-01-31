@@ -7,12 +7,21 @@ import Header from './components/header/Header';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#3E88AA',
+      main: '#F60D0D',
     },
     secondary: {
       main: '#2EE0CE',
     },
-  }
+  },
+  typography: {
+    fontFamily: [
+      'Quicksand',
+      'sans-serif',
+    ].join(','),
+    h6:{
+      fontWeight:500,
+    }
+  },
 
 });
 
