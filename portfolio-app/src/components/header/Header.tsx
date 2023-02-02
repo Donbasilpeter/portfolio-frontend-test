@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 import HeaderDrawer from "../drawer/Drawer";
 
 
-const drawerWidth = 240;
+const drawerWidth = "40%";
 const navItems = ["Home", "About","Skills","Education","Work", "Contact"];
 
 export default function DrawerAppBar() {
@@ -34,7 +34,7 @@ export default function DrawerAppBar() {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" }, color:"black"}}
+            sx={{ mr: 2, display: { md: "none" }, color:"black"}}
           >
             <MenuIcon />
           </IconButton>
@@ -43,7 +43,7 @@ export default function DrawerAppBar() {
             component="div"
             sx={{
               flexGrow: 2,
-              display: { xs: "none", sm: "block" },
+              display: { xs: "none", md: "block" },
               // color: theme.palette.primary.main,
               color: "black",
               my: "1.5rem",
@@ -51,7 +51,7 @@ export default function DrawerAppBar() {
           >
             DON
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box sx={{ display: { xs: "none", md: "block" } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: "black", mx: "0.5vw" }}>
                 <Typography variant="body1"> {item}</Typography>
@@ -69,10 +69,12 @@ export default function DrawerAppBar() {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block",sm:"block", md: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              minWidth: 240,
+
             },
           }}
         >

@@ -4,8 +4,7 @@ import Header from './components/header/Header';
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Home from './components/Home/home';
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+import Contact from './components/contact/contact';
 
 
 
@@ -16,12 +15,9 @@ const theme = createTheme({
       main: '#D61355',
     },
     secondary: {
-      main: '#ffffff',
+      main: '#CDB6BF',
     },
-    grey:{
-      "50":"#BFA5A7"
-      
-    }
+
   },
   typography: {
     fontFamily: [
@@ -34,7 +30,7 @@ const theme = createTheme({
     h4:{
       fontWeight:700,
     },
-    h1:{
+    h2:{
       fontWeight:700,
     },
     
@@ -50,8 +46,9 @@ const  App = () => {
       <Box >
         <CssBaseline />
         <Header/>
-      <Box component="main" sx={{height:"100%", width:"100%", bgcolor:theme.palette.secondary.main}}>
+      <Box component="main" sx={{height:"100%", width:"100%"}}>
         <Home/>
+        <Contact/>
 
       </Box>
     </Box>
