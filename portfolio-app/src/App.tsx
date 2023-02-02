@@ -13,11 +13,15 @@ import Typography from "@mui/material/Typography";
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#2660A4',
+      main: '#D61355',
     },
     secondary: {
-      main: '#EDF7F6',
+      main: '#ffffff',
     },
+    grey:{
+      "50":"#BFA5A7"
+      
+    }
   },
   typography: {
     fontFamily: [
@@ -27,9 +31,13 @@ const theme = createTheme({
     h6:{
       fontWeight:500,
     },
-    h3:{
+    h4:{
       fontWeight:700,
     },
+    h1:{
+      fontWeight:700,
+    },
+    
   },
 
 });
@@ -44,6 +52,7 @@ const  App = () => {
         <Header/>
       <Box component="main" sx={{height:"100%", width:"100%", bgcolor:theme.palette.secondary.main}}>
         <Home/>
+
       </Box>
     </Box>
     </ThemeProvider>

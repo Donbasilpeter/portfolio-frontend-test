@@ -34,12 +34,12 @@ export default function DrawerAppBar() {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { sm: "none" }, color:"black"}}
           >
             <MenuIcon />
           </IconButton>
           <Typography
-            variant="h3"
+            variant="h4"
             component="div"
             sx={{
               flexGrow: 2,
