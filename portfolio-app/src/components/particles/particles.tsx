@@ -14,6 +14,7 @@ export const ParticlesHome = () => {
     }, []);
     return (
         <Particles
+            style={{position:"absolute"}}
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}

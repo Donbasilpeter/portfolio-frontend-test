@@ -8,14 +8,15 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from '@mui/material/Link';
-import {ParticlesHome} from "../particles/particles";
+import { ParticlesHome } from "../particles/particles"; 
 
 const Home = () => {
   const theme = useTheme();
 
   return (
     <Box sx={{ height: "100vh", width: "100%" }}>
-      <ParticlesHome/>
+      {/* <ParticlesHome/> */}
+
       <Grid
         container
         sx={{ height: "100%", display: { xs: "none", sm: "none", md: "flex" } }}
@@ -39,12 +40,12 @@ const Home = () => {
             <Typography  variant="h2" sx={{ color: "black",letterSpacing: 1,lineHeight: 1.5  }}>
               Software developer
             </Typography>
-            <Button variant="contained" sx={{ width: 200, p: 2, mt: 4 }}>
-              <Typography variant="h5">Learn More</Typography>
+            <Button variant="contained" sx={{ width: 200, px: 2,py:1, mt: 4 }}>
+              <Typography variant="body1">Learn More</Typography>
             </Button>
             <Grid
               container
-              sx={{ position:"relative", mt:"26vh", width:"25rem", display: { xs: "none", sm: "none", md: "flex" } }}
+              sx={{ position:"absolute",bottom:"3vh", width:"25rem", display: { xs: "none", sm: "none", md: "flex" } }}
             >
               <Grid xs={3} md={3}>
               <Link href="https://www.linkedin.com/in/donbasilpeter/" >

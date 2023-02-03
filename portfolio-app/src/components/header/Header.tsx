@@ -9,14 +9,19 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import HeaderDrawer from "../drawer/Drawer";
+import { useDispatch, useSelector} from "react-redux";
+import { State } from "../../interfaces/store";
+import { setCurrentNavItem } from "../../reducers/navbar";
+
 
 
 const drawerWidth = "40%";
-const navItems = ["Home", "About","Skills","Education","Work", "Contact"];
 
 export default function DrawerAppBar() {
+  const dispatch = useDispatch();
   const [mobileOpen, setMobileOpen] = useState(false);
   const theme = useTheme();
+  const navItems =   useSelector((state:State) => state.navbar.navItems);
   
 
   const handleDrawerToggle = () => {
@@ -53,7 +58,7 @@ export default function DrawerAppBar() {
           </Typography>
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "black", mx: "0.5vw" }}>
+              <Button onClick={()=>{  dispatch(setCurrentNavItem(item))}} key={item} sx={{ color: "black", mx: "0.5vw" }}>
                 <Typography variant="body1"> {item}</Typography>
               </Button>
             ))}
