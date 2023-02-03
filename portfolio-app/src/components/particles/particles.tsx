@@ -19,6 +19,7 @@ export const ParticlesHome = () => {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
+              fullScreen: { enable: false },
                 particles: {
                   number: {
                     value: 80,

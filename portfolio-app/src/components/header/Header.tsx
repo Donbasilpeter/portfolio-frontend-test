@@ -44,6 +44,7 @@ export default function DrawerAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography
+           onClick={()=>{  dispatch(setCurrentNavItem("Home"))}}
             variant="h4"
             component="div"
             sx={{
@@ -52,6 +53,7 @@ export default function DrawerAppBar() {
               // color: theme.palette.primary.main,
               color: "black",
               my: "1.5rem",
+              cursor:"pointer"
             }}
           >
             DON

@@ -6,8 +6,12 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Home from "./components/Home/home";
 import Contact from "./components/contact/contact";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch  } from "react-redux";
 import { State } from "./interfaces/store";
+import { setCurrentNavItem } from './reducers/navbar'; 
+
+
+
 
 const theme = createTheme({
   palette: {
@@ -40,21 +44,23 @@ const App = () => {
 
   const contactRef = useRef() as any;
   const homeRef = useRef() as any;
+  const dispatch = useDispatch();
+
 
 
   useEffect(() => {
     switch(currentNavItem) { 
       case "Contact": { 
         contactRef.current.scrollIntoView(scrollProps)
+        dispatch(setCurrentNavItem(""))
          break; 
       } 
       case "Home": { 
         homeRef.current.scrollIntoView(scrollProps)
-
+        dispatch(setCurrentNavItem(""))
          break; 
       } 
       default: { 
-        homeRef.current.scrollIntoView(scrollProps)
          break; 
       } 
    } 

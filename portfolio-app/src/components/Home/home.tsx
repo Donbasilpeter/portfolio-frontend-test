@@ -1,22 +1,17 @@
-import mySvg from "../../assets/home-background.svg";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Button } from "@mui/material";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import Link from '@mui/material/Link';
 import { ParticlesHome } from "../particles/particles"; 
+import SocialMediaGrid from "../socialMediaGrid/socialMediaGrid";
 
 const Home = () => {
   const theme = useTheme();
 
   return (
     <Box sx={{ height: "100vh", width: "100%" }}>
-      {/* <ParticlesHome/> */}
-
+      <ParticlesHome/>
       <Grid
         container
         sx={{ height: "100%", display: { xs: "none", sm: "none", md: "flex" } }}
@@ -43,39 +38,7 @@ const Home = () => {
             <Button variant="contained" sx={{ width: 200, px: 2,py:1, mt: 4 }}>
               <Typography variant="body1">Learn More</Typography>
             </Button>
-            <Grid
-              container
-              sx={{ position:"absolute",bottom:"3vh", width:"25rem", display: { xs: "none", sm: "none", md: "flex" } }}
-            >
-              <Grid xs={3} md={3}>
-              <Link href="https://www.linkedin.com/in/donbasilpeter/" >
-                <LinkedInIcon
-                  sx={{ fontSize: 40, color: theme.palette.grey[500] }}
-                />
-              </Link>
-
-              </Grid>
-
-              <Grid xs={3} md={3}>
-              <Link href="https://twitter.com/donbasilpeter" >
-
-                <TwitterIcon
-                  sx={{ fontSize: 40, color: theme.palette.grey[500] }}
-                />
-              </Link>
-
-              </Grid>
-
-              <Grid xs={3} md={3}>
-              <Link href="https://github.com/Donbasilpeter" >
-
-                <GitHubIcon
-                  sx={{ fontSize: 40, color: theme.palette.grey[500] }}
-                />
-              </Link>
-
-              </Grid>
-            </Grid>
+            <SocialMediaGrid fontSize = {40}sx={{position:"absolute",bottom:"3vh", width:"25rem", display: { xs: "none", sm: "none", md: "flex" }}} />
           </Box>
         </Grid>
         <Grid xs={6} md={6}>
