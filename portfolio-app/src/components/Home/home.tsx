@@ -44,11 +44,10 @@ const Home = () => {
           width: {xs:"100%",md:"90%"},
           mt:{xs:"10%",md:"23%"},
           px:{xs:"auto"},
-          backgroundImage: `url(${"static/src/img/main.jpg"})`
 
         }}
         alt="The house from the offer."
-        src="src/assets/home.svg"
+        src="/static/images/home.svg"
       />
         </Grid>
       </Grid>
