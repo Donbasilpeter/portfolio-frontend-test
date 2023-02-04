@@ -76,8 +76,10 @@ const App = () => {
           <CssBaseline />
           <Header />
           <Box component="main" sx={{ height: "100%", width: "100%" }}>
-            <div ref={homeRef}><Home /></div>
-            <div ref={contactRef}><Contact/></div>
+          <div ref={homeRef}><Home /></div>
+
+          <div ref={contactRef}><Contact/></div>
+
           </Box>
         </Box>
       </ThemeProvider>

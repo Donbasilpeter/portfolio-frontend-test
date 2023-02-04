@@ -37,7 +37,7 @@ const Contact = () => {
   }));
 
   return (
-    <Box sx={{ height:  {xs:"200vh",md:"100vh"}, width: "100%" }}>
+    <Box sx={{ height:"100%", width: "100%" }}>
       <ToastContainer />
       <Box sx={{ height: "100%", pt: { xs:"17%",md: "6%" }, width: "100%" }}>
         <Grid
@@ -66,7 +66,7 @@ const Contact = () => {
               </Typography>
             </Box>
             <Card
-              sx={{ ml: { md: "15%" }, mr: { md: "20%" }, mt: { xs:"10%",md: "4%" }, mb: { xs:"5%" } }}
+              sx={{ ml: { md: "15%" }, mr: { md: "20%" }, mt: { xs:"10%",md: "4%" }, mb: { xs:"8rem" } }}
             >
               <CardContent>
                 <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>

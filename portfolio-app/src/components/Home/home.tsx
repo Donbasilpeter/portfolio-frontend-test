@@ -10,7 +10,7 @@ const Home = () => {
   const theme = useTheme();
 
   return (
-    <Box sx={{ height: "100vh", width: "100%" }}>
+    <Box sx={{ height: "100%", width: "100%" }}>
       <ParticlesHome/>
       <Grid
         container
@@ -32,7 +32,7 @@ const Home = () => {
             <Button variant="contained" sx={{ width: 200, px: 2,py:1, mt: 4 }}>
               <Typography variant="body1">Learn More</Typography>
             </Button>
-            <SocialMediaGrid fontSize = {40}sx={{position:"absolute",bottom:"3vh", width:"25rem", display: { xs: "none", sm: "none", md: "flex" }}} />
+            <SocialMediaGrid fontSize = {40}sx={{position:"relative",mt:{xs:2, md:"14rem"}, width:"25rem", display: { xs: "none", sm: "none", md: "flex" }}} />
           </Box>
         </Grid>
         <Grid xs={12} md={6} alignItems="center"
@@ -40,8 +40,8 @@ const Home = () => {
         <Box
         component="img"
         sx={{
-          height: {xs:"80%",md:"60%"},
-          width: {xs:"100%",md:"90%"},
+          height: {xs:"auto",md:"60%"},
+          width: {xs:"auto",md:"90%"},
           mt:{xs:"10%",md:"23%"},
           px:{xs:"auto"},
 
