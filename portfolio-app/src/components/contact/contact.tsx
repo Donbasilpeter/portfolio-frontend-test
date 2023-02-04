@@ -120,6 +120,7 @@ const Contact = () => {
                       label="Email Address"
                       name="email_id"
                       autoComplete="email"
+                      type="email"
                     />
                   </Box>
                   <Box

@@ -57,7 +57,7 @@ export default function DrawerAppBar() {
               cursor: "pointer",
             }}
           >
-            DON
+            Portfolio
           </Typography>
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             {navItems.map((item) => (

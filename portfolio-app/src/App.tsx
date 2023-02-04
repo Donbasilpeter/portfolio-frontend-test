@@ -13,6 +13,7 @@ import Contact from "./components/contact/contact";
 import { useSelector, useDispatch } from "react-redux";
 import { State } from "./interfaces/store";
 import { setCurrentNavItem } from "./reducers/navbar";
+import About from "./components/about/about";
 
 let theme = createTheme({
   palette: {
@@ -45,7 +46,10 @@ const App = () => {
   );
 
   const contactRef = useRef() as any;
+  const aboutRef = useRef() as any;
   const homeRef = useRef() as any;
+
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -57,6 +61,11 @@ const App = () => {
       }
       case "Home": {
         homeRef.current.scrollIntoView(scrollProps);
+        dispatch(setCurrentNavItem(""));
+        break;
+      }
+      case "About": {
+        aboutRef.current.scrollIntoView(scrollProps);
         dispatch(setCurrentNavItem(""));
         break;
       }
@@ -76,7 +85,9 @@ const App = () => {
             <div ref={homeRef}>
               <Home />
             </div>
-
+            <div ref={aboutRef}>
+              <About />
+            </div>
             <div ref={contactRef}>
               <Contact />
             </div>

@@ -9,3 +9,9 @@ export interface SocialMediaGridProps {
   sx?: SxProps<any>;
   fontSize: number;
 }
+
+export interface AboutCardProps{
+  cardImage:string;
+  cardText:string;
+  sx?: SxProps<any>;
+}
