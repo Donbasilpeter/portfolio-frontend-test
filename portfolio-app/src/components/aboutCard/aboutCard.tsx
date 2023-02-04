@@ -12,7 +12,7 @@ const AboutCard = ({cardImage,cardText,sx}:AboutCardProps)=>{
             component="img"
             height="auto"
             width="auto"
-            image={"/public/static/images/" + cardImage}
+            image={"/static/images/" + cardImage}
             alt="green iguana"
           />
           <CardContent>
