@@ -37,7 +37,7 @@ const Contact = () => {
   }));
 
   return (
-    <Box sx={{ height:  {xs:"187vh",md:"100vh"}, width: "100%" }}>
+    <Box sx={{ height:  {xs:"200vh",md:"100vh"}, width: "100%" }}>
       <ToastContainer />
       <Box sx={{ height: "100%", pt: { xs:"17%",md: "6%" }, width: "100%" }}>
         <Grid
