@@ -1,6 +1,6 @@
 import  { useRef,useEffect } from 'react';
 import "./App.scss";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material/styles";
 import Header from "./components/header/Header";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -13,7 +13,7 @@ import { setCurrentNavItem } from './reducers/navbar';
 
 
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     primary: {
       main: "#D61355",
@@ -35,6 +35,7 @@ const theme = createTheme({
     },
   },
 });
+theme = responsiveFontSizes(theme);
 
 const App = () => {
   const scrollProps = {behavior: "smooth"}

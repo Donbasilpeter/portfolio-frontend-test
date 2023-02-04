@@ -11,10 +11,6 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Paper from '@mui/material/Paper';
-import Link from '@mui/material/Link';
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import SocialMediaGrid from "../socialMediaGrid/socialMediaGrid";
 
 
@@ -41,19 +37,19 @@ const Contact = () => {
   }));
 
   return (
-    <Box sx={{ height: "100vh", width: "100%" }}>
+    <Box sx={{ height:  {xs:"187vh",md:"100vh"}, width: "100%" }}>
       <ToastContainer />
-      <Box sx={{ height: "100%", pt: "6%", width: "100%" }}>
+      <Box sx={{ height: "100%", pt: { xs:"17%",md: "6%" }, width: "100%" }}>
         <Grid
           container
           sx={{
             height: "100%",
             width: "100%",
-            display: { xs: "none", sm: "none", md: "flex" },
+            display: { xs: "flex", sm: "flex", md: "flex" },
           }}
         >
-          <Grid xs={6} md={8} sx={{ bgcolor: theme.palette.secondary.main }}>
-            <Box sx={{ pl: { md: "15%" }, pr: { md: "20%" }, pt: { md: "1%" } }}>
+          <Grid xs={12} md={8} sx={{ bgcolor: theme.palette.secondary.main }}>
+            <Box sx={{ pl: { xs:"5%", md: "15%" }, pr: { xs:"5%",md: "20%" }, pt: {xs:"5%", md: "1%" } }}>
               <Typography
                 variant="h3"
                 sx={{ color: "black", letterSpacing: 1, lineHeight: 2 }}
@@ -70,15 +66,15 @@ const Contact = () => {
               </Typography>
             </Box>
             <Card
-              sx={{ ml: { md: "15%" }, mr: { md: "20%" }, mt: { md: "4%" } }}
+              sx={{ ml: { md: "15%" }, mr: { md: "20%" }, mt: { xs:"10%",md: "4%" }, mb: { xs:"5%" } }}
             >
               <CardContent>
                 <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
                   <Box
                     sx={{
-                      display: "flex",
+                      display: {md:"flex"},
                       alignItems: "center",
-                      mx: 10,
+                      mx: {xs:1,md:10},
                       gap: 5,
                     }}
                   >
@@ -104,7 +100,7 @@ const Contact = () => {
                   </Box>
                   <Box
                     sx={{
-                      mx: 10,
+                      mx: {xs:1,md:10},
                       mt: 2,
                     }}
                   >
@@ -120,9 +116,9 @@ const Contact = () => {
                       rows={6}
                     />
                   </Box>
-                  <Box textAlign='right'>
+                  <Box sx={{textAlign:{xs:"center",md:"right"},mx:{xs:"8px",md:0}}}>
 
-                  <Button type="submit" variant="contained" sx={{ my: 2 ,mr:10}}>
+                  <Button type="submit" variant="contained" sx={{ py:{xs:2,md:1},width:{xs:"100%",md:"0%"},my: {xs:2,md:2}, mr:{md:10}}}>
                     Send
                   </Button>
                   </Box>
@@ -130,7 +126,7 @@ const Contact = () => {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={6} md={4}>
+          <Grid xs={12} md={4}>
 
             <Box >
             <Item  elevation={0}>
@@ -140,7 +136,7 @@ const Contact = () => {
             <Typography variant="body1"   sx={{mb:"4rem"  }}> +919048710212</Typography>
             <Typography variant="h6" color="primary" sx={{ lineHeight: 2 }}> ADDRESS :</Typography>
             <Typography variant="body1"   sx={{mb:"4rem"  }}> Orakottayil (H),<br></br>Kambilikandom,<br></br>Mukkudom P.O, Idukki Dist,<br></br> Kerala, India, <br></br>PIN: 685562</Typography>
-            <SocialMediaGrid fontSize = {30}  sx={{ position:"relative", width:"20rem", display: { xs: "none", sm: "none", md: "flex" } }} />
+            <SocialMediaGrid fontSize = {30}  sx={{ position:"relative", width:"20rem", display: { xs: "flex", sm: "flex", md: "flex" } }} />
            
       
                 </Item>

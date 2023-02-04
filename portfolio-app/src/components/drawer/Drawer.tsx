@@ -6,8 +6,14 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import { HeaderDrawerProps } from "../../interfaces/props";
+import { setCurrentNavItem } from "../../reducers/navbar";
+import { useDispatch } from "react-redux";
+
+
 
 const HeaderDrawer = ({ handleDrawerToggle, navItems }: HeaderDrawerProps) => {
+  const dispatch = useDispatch();
+
   return (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h5" sx={{ my: 2 }}>
@@ -16,7 +22,7 @@ const HeaderDrawer = ({ handleDrawerToggle, navItems }: HeaderDrawerProps) => {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item} disablePadding onClick={()=>{  dispatch(setCurrentNavItem(item))}}>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
             </ListItemButton>
