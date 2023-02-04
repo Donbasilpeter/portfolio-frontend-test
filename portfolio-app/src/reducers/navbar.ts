@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
-   navItems : ["Home", "About","Skills","Education","Work", "Contact"],
-   currentNavItem : "Home"
+  navItems: ["Home", "About", "Skills", "Education", "Work", "Contact"],
+  currentNavItem: "Home",
 };
 
 const navBarSlice = createSlice({
@@ -11,12 +11,8 @@ const navBarSlice = createSlice({
     setCurrentNavItem: (state, action) => {
       state.currentNavItem = action.payload;
     },
-
-
-  }
+  },
 });
 
-export const {
-  setCurrentNavItem
-} = navBarSlice.actions;
+export const { setCurrentNavItem } = navBarSlice.actions;
 export default navBarSlice.reducer;

@@ -9,8 +9,6 @@ import { HeaderDrawerProps } from "../../interfaces/props";
 import { setCurrentNavItem } from "../../reducers/navbar";
 import { useDispatch } from "react-redux";
 
-
-
 const HeaderDrawer = ({ handleDrawerToggle, navItems }: HeaderDrawerProps) => {
   const dispatch = useDispatch();
 
@@ -22,7 +20,13 @@ const HeaderDrawer = ({ handleDrawerToggle, navItems }: HeaderDrawerProps) => {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding onClick={()=>{  dispatch(setCurrentNavItem(item))}}>
+          <ListItem
+            key={item}
+            disablePadding
+            onClick={() => {
+              dispatch(setCurrentNavItem(item));
+            }}
+          >
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
             </ListItemButton>

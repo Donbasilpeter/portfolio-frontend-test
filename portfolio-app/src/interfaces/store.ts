@@ -8,6 +8,5 @@ export interface Navbar {
 }
 
 export interface AppProps {
-    store:State,
-  }
-
+  store: State;
+}

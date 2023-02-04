@@ -1,17 +1,18 @@
-import  { useRef,useEffect } from 'react';
+import { useRef, useEffect } from "react";
 import "./App.scss";
-import { createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material/styles";
+import {
+  createTheme,
+  ThemeProvider,
+  responsiveFontSizes,
+} from "@mui/material/styles";
 import Header from "./components/header/Header";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Home from "./components/Home/home";
 import Contact from "./components/contact/contact";
-import { useSelector, useDispatch  } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { State } from "./interfaces/store";
-import { setCurrentNavItem } from './reducers/navbar'; 
-
-
-
+import { setCurrentNavItem } from "./reducers/navbar";
 
 let theme = createTheme({
   palette: {
@@ -38,7 +39,7 @@ let theme = createTheme({
 theme = responsiveFontSizes(theme);
 
 const App = () => {
-  const scrollProps = {behavior: "smooth"}
+  const scrollProps = { behavior: "smooth" };
   const currentNavItem = useSelector(
     (state: State) => state.navbar.currentNavItem
   );
@@ -47,26 +48,22 @@ const App = () => {
   const homeRef = useRef() as any;
   const dispatch = useDispatch();
 
-
-
   useEffect(() => {
-    switch(currentNavItem) { 
-      case "Contact": { 
-        contactRef.current.scrollIntoView(scrollProps)
-        dispatch(setCurrentNavItem(""))
-         break; 
-      } 
-      case "Home": { 
-        homeRef.current.scrollIntoView(scrollProps)
-        dispatch(setCurrentNavItem(""))
-         break; 
-      } 
-      default: { 
-         break; 
-      } 
-   } 
-
-    
+    switch (currentNavItem) {
+      case "Contact": {
+        contactRef.current.scrollIntoView(scrollProps);
+        dispatch(setCurrentNavItem(""));
+        break;
+      }
+      case "Home": {
+        homeRef.current.scrollIntoView(scrollProps);
+        dispatch(setCurrentNavItem(""));
+        break;
+      }
+      default: {
+        break;
+      }
+    }
   }, [currentNavItem]);
 
   return (
@@ -76,10 +73,13 @@ const App = () => {
           <CssBaseline />
           <Header />
           <Box component="main" sx={{ height: "100%", width: "100%" }}>
-          <div ref={homeRef}><Home /></div>
+            <div ref={homeRef}>
+              <Home />
+            </div>
 
-          <div ref={contactRef}><Contact/></div>
-
+            <div ref={contactRef}>
+              <Contact />
+            </div>
           </Box>
         </Box>
       </ThemeProvider>

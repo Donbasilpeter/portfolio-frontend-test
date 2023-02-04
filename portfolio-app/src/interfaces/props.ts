@@ -1,13 +1,11 @@
+import { SxProps } from "@mui/system";
 
-
-import { SxProps } from '@mui/system';
-
-export interface HeaderDrawerProps  {
-    handleDrawerToggle : () => void;
-    navItems: string[]
+export interface HeaderDrawerProps {
+  handleDrawerToggle: () => void;
+  navItems: string[];
 }
 
-export interface SocialMediaGridProps{
-    sx?: SxProps<any>;
-    fontSize:number
+export interface SocialMediaGridProps {
+  sx?: SxProps<any>;
+  fontSize: number;
 }
