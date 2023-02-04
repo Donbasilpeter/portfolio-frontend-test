@@ -66,10 +66,10 @@ const Contact = () => {
               </Typography>
             </Box>
             <Card
-              sx={{ ml: { md: "15%" }, mr: { md: "20%" }, mt: { xs:"10%",md: "4%" }, mb: { xs:"8rem" } }}
+              sx={{ ml: {sm:"15%", md: "15%" }, mr: {sm:"15%", md: "20%" }, mt: { xs:"10%",md: "4%" }, mb: { xs:"8rem", md:"3.5rem"} }}
             >
               <CardContent>
-                <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
+                <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3, ml: {sm:"10%", md: 0 }, mr: {sm:"10%", md: 0 } }}>
                   <Box
                     sx={{
                       display: {md:"flex"},
@@ -116,9 +116,9 @@ const Contact = () => {
                       rows={6}
                     />
                   </Box>
-                  <Box sx={{textAlign:{xs:"center",md:"right"},mx:{xs:"8px",md:0}}}>
+                  <Box sx={{textAlign:{xs:"center",sm:"right",md:"right"},mx:{xs:"8px",md:0}}}>
 
-                  <Button type="submit" variant="contained" sx={{ py:{xs:2,md:1},width:{xs:"100%",md:"0%"},my: {xs:2,md:2}, mr:{md:10}}}>
+                  <Button type="submit" variant="contained" sx={{ py:{xs:2,md:1},width:{xs:"100%",sm:"7rem",md:"0%"},my:2, mr:{md:10}}}>
                     Send
                   </Button>
                   </Box>
@@ -136,7 +136,7 @@ const Contact = () => {
             <Typography variant="body1"   sx={{mb:"4rem"  }}> +919048710212</Typography>
             <Typography variant="h6" color="primary" sx={{ lineHeight: 2 }}> ADDRESS :</Typography>
             <Typography variant="body1"   sx={{mb:"4rem"  }}> Orakottayil (H),<br></br>Kambilikandom,<br></br>Mukkudom P.O, Idukki Dist,<br></br> Kerala, India, <br></br>PIN: 685562</Typography>
-            <SocialMediaGrid fontSize = {30}  sx={{ position:"relative", width:"20rem", display: { xs: "flex", sm: "flex", md: "flex" } }} />
+            <SocialMediaGrid fontSize = {30}  sx={{ position:"relative", width:"20rem", display: { xs: "flex", sm: "flex", md: "flex" },mb:{xs:"3rem" ,md:0} }} />
            
       
                 </Item>
