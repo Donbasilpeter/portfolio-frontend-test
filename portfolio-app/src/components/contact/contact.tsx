@@ -95,7 +95,6 @@ const Contact = () => {
                       label="Email Address"
                       name="email_id"
                       autoComplete="email"
-                      autoFocus
                     />
                   </Box>
                   <Box
