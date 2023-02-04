@@ -5,9 +5,15 @@ import { useTheme } from "@mui/material/styles";
 import { Button } from "@mui/material";
 import { ParticlesHome } from "../particles/particles";
 import SocialMediaGrid from "../socialMediaGrid/socialMediaGrid";
+import { useDispatch } from "react-redux";
+import { setCurrentNavItem } from "../../reducers/navbar";
+
+
 
 const Home = () => {
   const theme = useTheme();
+  const dispatch = useDispatch();
+
 
   return (
     <Box sx={{ height: "100%", width: "100%" }}>
@@ -50,6 +56,9 @@ const Home = () => {
             <Button
               variant="contained"
               sx={{ width: 200, px: 2, py: 1, mt: 4 }}
+              onClick={() => {
+                dispatch(setCurrentNavItem("About"));
+              }}
             >
               <Typography variant="body1">Learn More</Typography>
             </Button>
