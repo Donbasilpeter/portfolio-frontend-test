@@ -14,23 +14,17 @@ const Home = () => {
       <ParticlesHome/>
       <Grid
         container
-        sx={{ height: "100%", display: { xs: "none", sm: "none", md: "flex" } }}
+        sx={{ height: "100%", display: { xs: "flex",  md: "flex" } }}
       >
-        <Grid xs={6} md={6}>
-          <Box sx={{ pl: { md: "15%" }, pt: { md: "16%" } }}>
+        <Grid xs={12} md={6}>
+          <Box sx={{ pl: { xs:"12%" }, pr:{ xs:"12%",md:"0%"},pt: { xs:"17%",md: "16%" } }}>
             <Typography variant="h2" sx={{ color: "black",letterSpacing: 1,lineHeight: 1.5 }}>
               Hi,
               </Typography>
-              <Box style={{display:"flex"}}>
+              <Box style={{display:"inline"}}>
             <Typography variant="h2" sx={{ color: "black",letterSpacing: 1,lineHeight: 1.5  }}>
-               I'm  &nbsp;
+               I'm  &nbsp;<span style={{color:theme.palette.primary.main}}>Don Basil Peter,</span>
               </Typography>
-              <Typography
-                variant="h2"
-                sx={{ color: theme.palette.primary.main,letterSpacing: 1,lineHeight: 1.5  }}
-              >
-                Don Basil Peter
-            </Typography>
             </Box>
             <Typography  variant="h2" sx={{ color: "black",letterSpacing: 1,lineHeight: 1.5  }}>
               Software developer
@@ -41,13 +35,15 @@ const Home = () => {
             <SocialMediaGrid fontSize = {40}sx={{position:"absolute",bottom:"3vh", width:"25rem", display: { xs: "none", sm: "none", md: "flex" }}} />
           </Box>
         </Grid>
-        <Grid xs={6} md={6}>
+        <Grid xs={12} md={6} alignItems="center"
+  justifyContent="center"  >
         <Box
         component="img"
         sx={{
-          height: "60%",
-          width: "90%",
-          mt:"23%",
+          height: {xs:"80%",md:"60%"},
+          width: {xs:"100%",md:"90%"},
+          mt:{xs:"10%",md:"23%"},
+          px:{xs:"auto"},
           backgroundImage: `url(${"static/src/img/main.jpg"})`
 
         }}
