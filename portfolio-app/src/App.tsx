@@ -18,10 +18,10 @@ import About from "./components/about/about";
 let theme = createTheme({
   palette: {
     primary: {
-      main: "#D61355",
+      main: "#BA68C8",
     },
     secondary: {
-      main: "#FFF5F7",
+      main: "#E4E8F3",
     },
   },
   typography: {
