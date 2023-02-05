@@ -15,6 +15,7 @@ import SocialMediaGrid from "../socialMediaGrid/socialMediaGrid";
 
 const Contact = () => {
   const theme = useTheme();
+
   const handleSubmit = (event: any) => {
     event.preventDefault();
     emailjs

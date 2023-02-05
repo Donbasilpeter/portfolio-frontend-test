@@ -21,7 +21,7 @@ let theme = createTheme({
       main: "#D61355",
     },
     secondary: {
-      main: "#BFA5A7",
+      main: "#FFF5F7",
     },
   },
   typography: {
@@ -40,6 +40,7 @@ let theme = createTheme({
 theme = responsiveFontSizes(theme);
 
 const App = () => {
+
   const scrollProps = { behavior: "smooth" };
   const currentNavItem = useSelector(
     (state: State) => state.navbar.currentNavItem

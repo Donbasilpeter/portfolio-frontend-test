@@ -12,6 +12,8 @@ export interface SocialMediaGridProps {
 
 export interface AboutCardProps{
   cardImage:string;
-  cardText:string;
+  cardHeading:string;
+  cardDescription:string;
   sx?: SxProps<any>;
+
 }

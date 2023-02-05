@@ -5,9 +5,9 @@ import AboutCard from "../aboutCard/aboutCard";
 import Grid from "@mui/material/Grid";
 import mySvg from '../../../public/static/images/about.svg';
 const ImageLocations = [
-  { loc: "frontend.svg", text: "Front-End Development" },
-  { loc: "fullstack.svg", text: "Full-Stack Development" },
-  { loc: "backend.svg", text: "Back-End Development" },
+  { loc: "frontend.svg", title: "Front-End Development", description:"  Designs front-end for test-driven development.    " },
+  { loc: "fullstack.svg", title: "Full-Stack Development",description:" Analyzes and tests applications prior to launch to remedy last minute issues." },
+  { loc: "backend.svg", title: "Back-End Development",description:"  Delivers back-end solution to meet functional or technical specifications." },
 ];
 
 const About = () => {
@@ -42,7 +42,7 @@ const About = () => {
   
         >
           <Grid item md={3}>
-          <AboutCard sx={{display:{md:"none"}}}cardImage={ImageLocations[1].loc} cardText={ImageLocations[1].text} />
+          <AboutCard sx={{display:{md:"none"}}}cardImage={ImageLocations[1].loc} cardHeading={ImageLocations[1].title} cardDescription={ImageLocations[1].description}/>
 
             <Box
               sx={{
@@ -53,7 +53,7 @@ const About = () => {
               }}
             >
               {ImageLocations.map((eachCard) => (
-                <AboutCard cardImage={eachCard.loc} cardText={eachCard.text} />
+                <AboutCard  key={eachCard.title}  cardImage={eachCard.loc} cardHeading={eachCard.title}  cardDescription={eachCard.description} />
               ))}
             </Box>
           </Grid>

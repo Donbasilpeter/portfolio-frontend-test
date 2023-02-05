@@ -4,9 +4,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-const AboutCard = ({cardImage,cardText,sx}:AboutCardProps)=>{
+import { useTheme } from "@mui/material/styles";
+
+const AboutCard = ({cardImage,cardHeading,cardDescription,sx}:AboutCardProps)=>{
+  const theme = useTheme();
+
     return(
-        <Card sx={{ height:"auto",width: {xs:"60vw",sm:"20rem",md:"13rem"} , my:{xs:5,md:0},...sx}}>
+        <Card  sx={{ height:"auto",width: {xs:"60vw",sm:"20rem",md:"15rem"} , my:{xs:5,md:0},...sx}}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -14,11 +18,15 @@ const AboutCard = ({cardImage,cardText,sx}:AboutCardProps)=>{
             width="auto"
             image={"/static/images/" + cardImage}
             alt="green iguana"
+            sx={{px:{sm:5,md:6}}}
           />
           <CardContent>
             <Typography sx={{px:{md:5}}}gutterBottom variant="body1" component="div">
-             {cardText}
+             {cardHeading}
             </Typography>
+            <Typography sx={{ height:{sm:"3rem",md:"4rem"}}} variant="body2" color={theme.palette.grey[500]}>
+            {cardDescription}
+          </Typography>
 
           </CardContent>
         </CardActionArea>
