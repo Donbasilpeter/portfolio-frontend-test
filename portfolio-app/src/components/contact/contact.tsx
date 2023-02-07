@@ -153,7 +153,7 @@ const Contact = () => {
                       variant="contained"
                       sx={{
                         py: { xs: 2, md: 1 },
-                        width: { xs: "100%", sm: "7rem", md: "0%" },
+                        width: { xs: "100%", sm: "7rem", md: "5rem" },
                         my: 2,
                         mr: { md: 10 },
                       }}
@@ -197,7 +197,6 @@ const Contact = () => {
                   fontSize={30}
                   sx={{
                     position: "relative",
-                    width: "20rem",
                     display: { xs: "flex", sm: "flex", md: "flex" },
                     mb: { xs: "3rem", md: 0 },
                   }}

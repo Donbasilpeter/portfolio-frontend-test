@@ -92,6 +92,7 @@ const App = () => {
           <CssBaseline />
           <Header />
           <Box component="main" sx={{ height: "100%", width: "100%" }}>
+            <Typography sx={{wordBreak:"break-word"}}>
             <div ref={homeRef}>
               <Home />
             </div>
@@ -106,6 +107,7 @@ const App = () => {
             <div ref={contactRef}>
               <Contact />
             </div>
+            </Typography>
           </Box>
         </Box>
       </ThemeProvider>

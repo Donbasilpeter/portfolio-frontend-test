@@ -11,7 +11,7 @@ const SocialMediaGrid = ({ sx, fontSize }: SocialMediaGridProps) => {
   const sxOfIcons = { fontSize: fontSize, color: theme.palette.grey[500] };
 
   return (
-    <Grid container sx={sx}>
+    <Grid container spacing={{xs:3,sm:0}} sx={sx}>
       <Grid xs={3} md={3}>
         <Link href="https://www.linkedin.com/in/donbasilpeter/">
           <LinkedInIcon sx={sxOfIcons} />
