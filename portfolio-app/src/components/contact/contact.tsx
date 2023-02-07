@@ -198,7 +198,7 @@ const Contact = () => {
                   position: "relative",
                   display: { xs: "flex", sm: "flex", md: "flex" },
                   mb: { xs: "3rem", md: 0 },
-                  maxWidth:"30rem"
+                  width:{xs:"15rem", sm:"25rem"}
                 }}
               />
             </Box>
