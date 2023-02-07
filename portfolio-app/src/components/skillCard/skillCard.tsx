@@ -4,7 +4,6 @@ import { useTheme } from "@mui/material/styles";
 import Container from "@mui/material/Container/Container";
 import { Box } from "@mui/system";
 import { SkillCardProps } from '../../interfaces/props';
-import { Paper } from '@mui/material';
 
 
 const SkillCard = ({name,iconLink,description}:SkillCardProps)=>{

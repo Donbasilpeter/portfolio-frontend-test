@@ -15,6 +15,7 @@ import { State } from "./interfaces/store";
 import { setCurrentNavItem } from "./reducers/navbar";
 import About from "./components/about/about";
 import Skills from "./components/skills/skills";
+import ExperienceAndEducation from "./components/ExperienceAndEducation/experienceAndEducation";
 
 let theme = createTheme({
   palette: {
@@ -100,6 +101,8 @@ const App = () => {
             <div ref={skillsRef}>
             <Skills/>
             </div>
+            <ExperienceAndEducation/>
+
             <div ref={contactRef}>
               <Contact />
             </div>

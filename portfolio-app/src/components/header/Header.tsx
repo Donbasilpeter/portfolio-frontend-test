@@ -50,7 +50,7 @@ export default function DrawerAppBar() {
               flexGrow: 2,
               position: { xs: "absolute", md: "relative" },
               right: { xs: "15%", md: "0" },
-              display: { xs: "block", md: "block" },
+              display: { xs: mobileOpen?  "none" :"block"},
               // color: theme.palette.primary.main,
               color: "black",
               my: "1.5rem",

@@ -8,14 +8,18 @@ import Typography from "@mui/material/Typography";
 import { HeaderDrawerProps } from "../../interfaces/props";
 import { setCurrentNavItem } from "../../reducers/navbar";
 import { useDispatch } from "react-redux";
+import { useTheme } from "@mui/material/styles";
+
 
 const HeaderDrawer = ({ handleDrawerToggle, navItems }: HeaderDrawerProps) => {
   const dispatch = useDispatch();
+  const theme = useTheme();
+
 
   return (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h5" sx={{ my: 2 }}>
-        Hello
+      <Typography variant="h5" color="white" sx={{bgcolor:theme.palette.primary.main , py: 2 }}>
+        Portfolio
       </Typography>
       <Divider />
       <List>
@@ -27,8 +31,8 @@ const HeaderDrawer = ({ handleDrawerToggle, navItems }: HeaderDrawerProps) => {
               dispatch(setCurrentNavItem(item));
             }}
           >
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+            <ListItemButton sx={{color:theme.palette.primary.main , textAlign: "center" }}>
+              <ListItemText color="black" sx={{color:"black"}}primary={item} />
             </ListItemButton>
           </ListItem>
         ))}
