@@ -16,6 +16,7 @@ import { setCurrentNavItem } from "./reducers/navbar";
 import About from "./components/about/about";
 import Skills from "./components/skills/skills";
 import ExperienceAndEducation from "./components/ExperienceAndEducation/experienceAndEducation";
+import { Typography } from "@mui/material";
 
 let theme = createTheme({
   palette: {
