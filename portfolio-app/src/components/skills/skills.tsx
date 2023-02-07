@@ -40,7 +40,7 @@ const skills = [
   },
   {
     name: "HTML",
-    iconLink: "/static/images/html.png",
+    iconLink: "/static/images/html.svg",
     description: "Familiar with the standard markup language for Web pages",
   },
 
