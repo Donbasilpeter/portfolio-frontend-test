@@ -13,7 +13,7 @@ const SkillCard = ({name,iconLink,description}:SkillCardProps)=>{
     return(
         <Container sx={{height:{xs:"100%"}, backgroundColor:"white", }}>
             <Box sx= {{justifyContent:{xs:"space-between"}, display:{xs:"flex"},px:{xs:5},pt:{xs:5}}}>
-            <Typography  color="primary" variant="h5" textAlign="left">
+            <Typography   variant="h5" textAlign="left">
             {name}
             </Typography>
             <Box
