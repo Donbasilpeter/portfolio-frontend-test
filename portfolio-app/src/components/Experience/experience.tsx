@@ -86,7 +86,7 @@ const Experience = () => {
               {" "}
               Designs and develops Case Flow , an open- source generic Case
               Management application built on top of Formsflow.ai using NestUS,
-              React, PostgreSQL, Flask etc...
+              React, PostgreSQL, Flask 
             </Typography>
           </Box>
             </Grid>

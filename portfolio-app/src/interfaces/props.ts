@@ -22,6 +22,6 @@ export interface SkillCardProps{
 name:string;
 iconLink:string;
 description:string;
-
+link:string;
 }
 

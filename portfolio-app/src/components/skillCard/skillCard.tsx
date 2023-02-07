@@ -4,13 +4,15 @@ import { useTheme } from "@mui/material/styles";
 import Container from "@mui/material/Container/Container";
 import { Box } from "@mui/system";
 import { SkillCardProps } from '../../interfaces/props';
+import Link from '@mui/material/Link';
 
 
-const SkillCard = ({name,iconLink,description}:SkillCardProps)=>{
+const SkillCard = ({name,iconLink,description,link}:SkillCardProps)=>{
   const theme = useTheme();
 
     return(
-        <Container sx={{height:{xs:"100%"}, backgroundColor:"white", }}>
+<Link href={link} underline="none" color="black">
+        <Container sx={{height:{xs:"100%"}, backgroundColor:"white",cursor: "pointer" }}>
             <Box sx= {{justifyContent:{xs:"space-between"}, display:{xs:"flex"},px:{xs:5},pt:{xs:5}}}>
             <Typography   variant="h5" textAlign="left">
             {name}
@@ -34,6 +36,7 @@ const SkillCard = ({name,iconLink,description}:SkillCardProps)=>{
 
    
         </Container>
+        </Link>
 
     )
 }
