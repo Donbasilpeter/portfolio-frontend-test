@@ -40,8 +40,8 @@ const Education = () => {
         ref={educationRef}
           sx={{
             py: { xs: "5rem", md: "8rem" },
-            px: { xs: "4rem", sm: "7rem", md: "3rem" },
-            pl: { xs: "4rem", sm: "7rem", md: "8rem" },
+            pr: { xs: "1rem",sm: "7rem", md: "3rem" },
+            pl: { xs: "2rem",sm: "7rem", md: "8rem" },
 
             
           }}
@@ -51,7 +51,7 @@ const Education = () => {
             <Grid xs={12} md={12}>
             <Box sx={{ pt: { xs: "5rem", md: "3rem" } }}>
             <Typography
-              sx={{ pb: { xs: "5rem", md: 1 } }}
+              sx={{ pb: { xs: 1} }}
               color="primary"
               variant="h5"
             >
@@ -69,7 +69,7 @@ const Education = () => {
             <Grid xs={12} md={12}>
             <Box sx={{ pt: { xs: "5rem", md: "3rem" } }}>
             <Typography
-              sx={{ pb: { xs: "5rem", md: 1 } }}
+              sx={{ pb: { xs: 1, md: 1 } }}
               color="primary"
               variant="h5"
             >
@@ -86,7 +86,7 @@ const Education = () => {
             <Grid xs={12} md={12}>
             <Box sx={{ pt: { xs: "5rem", md: "3rem" } }}>
             <Typography
-              sx={{ pb: { xs: "5rem", md: 1 } }}
+              sx={{ pb: { xs: 1 } }}
               color="primary"
               variant="h5"
             >

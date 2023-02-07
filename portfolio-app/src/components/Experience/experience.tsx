@@ -39,7 +39,8 @@ const Experience = () => {
              ref={experienceRef}
           sx={{
             pt: { xs: "5rem", md: "8rem" },
-            px: { xs: "4rem", sm: "7rem", md: "3rem" },
+            pr: { xs: "4rem",sm: "7rem", md: "3rem" },
+            pl: { xs: "2rem",sm: "7rem", md: "8rem" },
 
             backgroundImage: `url(${mySvg})`,
             height: "100%",
@@ -49,8 +50,8 @@ const Experience = () => {
           <Typography color="primary" variant="h3"> Experience</Typography>
           <Grid container>
             <Grid xs={12} md={12}>
-            <Box sx={{ pt: { xs: "5rem", md: "3rem" },  pr: { xs: "5rem", md: "10rem" } }}>
-            <Typography     sx={{ pb: { xs: "5rem", md: 1 } }} variant="h5">
+            <Box sx={{ pt: { xs: "5rem", md: "3rem" },  pr: { xs: "1rem", md: "10rem" } }}>
+            <Typography     sx={{ pb: { xs: 1} }} variant="h5">
               {" "}
               MODUURN project (October 2021 to March 2022 )
             </Typography>
@@ -63,8 +64,8 @@ const Experience = () => {
             </Grid>
             <Grid xs={12} md={12}>
 
-            <Box sx={{ pt: { xs: "5rem", md: "5rem" }, pr: { xs: "5rem", md: "10rem" } }}>
-            <Typography   sx={{ pb: { xs: "5rem", md: 1 } }} variant="h5">
+            <Box sx={{ pt: { xs: "5rem", md: "5rem" }, pr: { xs: "1rem", md: "10rem" } }}>
+            <Typography   sx={{ pb: { xs: 1} }} variant="h5">
               {" "}
               Formsflow.ai (April 2022 to may 2022)
             </Typography>
@@ -76,8 +77,8 @@ const Experience = () => {
             </Grid>
 
             <Grid xs={12} md={12}>
-            <Box sx={{ py: { xs: "5rem", md: "5rem" },pr: { xs: "5rem", md: "10rem" }  }}>
-            <Typography   sx={{ pb: { xs: "5rem", md: 1 } }}  variant="h5">
+            <Box sx={{ py: { xs: "5rem", md: "5rem" },pr: { xs: "1rem", md: "10rem" }  }}>
+            <Typography   sx={{ pb: { xs: 1 } }}  variant="h5">
               {" "}
               CaseFlow (June 2022 to Present) -
             </Typography>
