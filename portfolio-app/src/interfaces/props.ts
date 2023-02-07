@@ -17,3 +17,11 @@ export interface AboutCardProps{
   sx?: SxProps<any>;
 
 }
+
+export interface SkillCardProps{
+name:string;
+iconLink:string;
+description:string;
+
+}
+

@@ -14,6 +14,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { State } from "./interfaces/store";
 import { setCurrentNavItem } from "./reducers/navbar";
 import About from "./components/about/about";
+import Skills from "./components/skills/skills";
 
 let theme = createTheme({
   palette: {
@@ -49,6 +50,8 @@ const App = () => {
   const contactRef = useRef() as any;
   const aboutRef = useRef() as any;
   const homeRef = useRef() as any;
+  const skillsRef = useRef() as any;
+
 
 
   const dispatch = useDispatch();
@@ -70,6 +73,11 @@ const App = () => {
         dispatch(setCurrentNavItem(""));
         break;
       }
+      case "Skills": {
+        skillsRef.current.scrollIntoView(scrollProps);
+        dispatch(setCurrentNavItem(""));
+        break;
+      }
       default: {
         break;
       }
@@ -88,6 +96,9 @@ const App = () => {
             </div>
             <div ref={aboutRef}>
               <About />
+            </div>
+            <div ref={skillsRef}>
+            <Skills/>
             </div>
             <div ref={contactRef}>
               <Contact />

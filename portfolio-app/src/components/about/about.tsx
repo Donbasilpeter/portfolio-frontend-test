@@ -5,8 +5,8 @@ import AboutCard from "../aboutCard/aboutCard";
 import Grid from "@mui/material/Grid";
 import mySvg from '../../../public/static/images/about.svg';
 const ImageLocations = [
-  { loc: "frontend.svg", title: "Front-End Development", description:"  Designs front-end for test-driven development.    " },
-  { loc: "fullstack.svg", title: "Full-Stack Development",description:" Analyzes and tests applications prior to launch to remedy last minute issues." },
+  { loc: "frontend.svg", title: "Front-End Development", description:"  Designs front-end for test-driven development." },
+  { loc: "fullstack.svg", title: "Full-Stack Development",description:" Develops and tests applications to deliver best quality product." },
   { loc: "backend.svg", title: "Back-End Development",description:"  Delivers back-end solution to meet functional or technical specifications." },
 ];
 
