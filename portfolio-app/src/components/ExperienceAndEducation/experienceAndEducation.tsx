@@ -9,7 +9,7 @@ const ExperienceAndEducation = () => {
     <>
       <Grid
         container
-        sx={{  height: "100%", display: { xs: "flex", md: "flex" } }}
+        sx={{  height: "100%", display: { xs: "flex" } }}
       >
         <Education/>
         <Experience/>

@@ -39,8 +39,8 @@ const Experience = () => {
              ref={experienceRef}
           sx={{
             pt: { xs: "5rem", md: "8rem" },
-            pr: { xs: "4rem",sm: "7rem", md: "3rem" },
-            pl: { xs: "2rem",sm: "7rem", md: "8rem" },
+            pr: { xs: "4rem", md: "3rem" },
+            pl: { xs: "2rem", md: "8rem" },
 
             backgroundImage: `url(${mySvg})`,
             height: "100%",

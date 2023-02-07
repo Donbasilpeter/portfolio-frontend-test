@@ -71,14 +71,14 @@ const Skills = () => {
       <Box
         sx={{
           textAlign: "center",
-          pt: { xs: "4rem", sm: "5rem" },
-          pb: { xs: "3rem", sm: "2rem" },
+          pt: { xs: "4rem", md: "6rem" },
+          pb: { xs: "2rem", sm: "3rem" },
         }}
       >
         <Typography variant="h2">Skills</Typography>
       </Box>
           
-      <Box sx={{ textAlign: "center", mx: {xs:3, sm:3, md: 10} ,pb: { xs: "5rem", md: "3.5rem" }, }}>
+      <Box sx={{ textAlign: "center", mx: {xs:3, sm:3, md: 10} ,pb: { xs: "5rem", md: "6rem" }, }}>
         <Grid container spacing={3}>
           {skills.map((eachSkill) => (
             <Grid key={eachSkill.name} item xs={12} sm={6} md={4} >

@@ -34,14 +34,6 @@ const Contact = () => {
         }
       );
   };
-  const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body2,
-
-    color: theme.palette.text.secondary,
-    height: "auto",
-    lineHeight: "60px",
-    margin: "6rem 4rem auto 5rem",
-  }));
 
   return (
     <Box sx={{ height: "100%", width: "100%" }}>
@@ -166,42 +158,49 @@ const Contact = () => {
             </Card>
           </Grid>
           <Grid xs={12} md={4}>
-            <Box>
-              <Item elevation={0}>
-                <Typography variant="h6" color="primary" sx={{ lineHeight: 2 }}>
-                  {" "}
-                  EMAIL :
-                </Typography>
-                <Typography variant="body1" sx={{ mb: "4rem" }}>
-                  {" "}
-                  donbasilpeter@gmail.com
-                </Typography>
-                <Typography variant="h6" color="primary" sx={{ lineHeight: 2 }}>
-                  {" "}
-                  PHONE NO :
-                </Typography>
-                <Typography variant="body1" sx={{ mb: "4rem" }}>
-                  {" "}
-                  +919048710212
-                </Typography>
-                <Typography variant="h6" color="primary" sx={{ lineHeight: 2 }}>
-                  {" "}
-                  ADDRESS :
-                </Typography>
-                <Typography variant="body1" sx={{ mb: "4rem" }}>
-                  {" "}
-                  Orakottayil (H),<br></br>Kambilikandom,<br></br>Mukkudom P.O,
-                  Idukki Dist,<br></br> Kerala, India, <br></br>PIN: 685562
-                </Typography>
-                <SocialMediaGrid
-                  fontSize={30}
-                  sx={{
-                    position: "relative",
-                    display: { xs: "flex", sm: "flex", md: "flex" },
-                    mb: { xs: "3rem", md: 0 },
-                  }}
-                />
-              </Item>
+            <Box
+              sx={{
+                color: theme.palette.text.secondary,
+                height: "auto",
+                lineHeight: "60px",
+                mt:"5rem",
+                ml:{xs:"2rem",md:"5rem"}
+              }}
+            >
+              <Typography variant="h6" color="primary" sx={{ lineHeight: 2 }}>
+                {" "}
+                EMAIL :
+              </Typography>
+              <Typography variant="body1" sx={{ mb: "4rem" }}>
+                {" "}
+                donbasilpeter@gmail.com
+              </Typography>
+              <Typography variant="h6" color="primary" sx={{ lineHeight: 2 }}>
+                {" "}
+                PHONE NO :
+              </Typography>
+              <Typography variant="body1" sx={{ mb: "4rem" }}>
+                {" "}
+                +919048710212
+              </Typography>
+              <Typography variant="h6" color="primary" sx={{ lineHeight: 2 }}>
+                {" "}
+                ADDRESS :
+              </Typography>
+              <Typography variant="body1" sx={{ mb: "4rem" }}>
+                {" "}
+                Orakottayil (H),<br></br>Kambilikandom,<br></br>Mukkudom P.O,
+                Idukki Dist,<br></br> Kerala, India, <br></br>PIN: 685562
+              </Typography>
+              <SocialMediaGrid
+                fontSize={30}
+                sx={{
+                  position: "relative",
+                  display: { xs: "flex", sm: "flex", md: "flex" },
+                  mb: { xs: "3rem", md: 0 },
+                  maxWidth:"30rem"
+                }}
+              />
             </Box>
           </Grid>
         </Grid>

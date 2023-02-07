@@ -40,8 +40,8 @@ const Education = () => {
         ref={educationRef}
           sx={{
             py: { xs: "5rem", md: "8rem" },
-            pr: { xs: "1rem",sm: "7rem", md: "3rem" },
-            pl: { xs: "2rem",sm: "7rem", md: "8rem" },
+            pr: { xs: "1rem", md: "3rem" },
+            pl: { xs: "2rem", md: "8rem" },
 
             
           }}
