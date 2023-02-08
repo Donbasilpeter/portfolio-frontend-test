@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
-import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
@@ -10,7 +9,6 @@ import CardContent from "@mui/material/CardContent";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Paper from "@mui/material/Paper";
 import SocialMediaGrid from "../socialMediaGrid/socialMediaGrid";
 
 const Contact = () => {

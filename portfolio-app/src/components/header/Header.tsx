@@ -12,6 +12,7 @@ import HeaderDrawer from "../drawer/Drawer";
 import { useDispatch, useSelector } from "react-redux";
 import { State } from "../../interfaces/store";
 import { setCurrentNavItem } from "../../reducers/navbar";
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 const drawerWidth = "40%";
 
@@ -20,15 +21,17 @@ export default function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const theme = useTheme();
   const navItems = useSelector((state: State) => state.navbar.navItems);
+  
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+  const trigger = useScrollTrigger({ disableHysteresis: true })
   return (
     <>
       <AppBar
         component="nav"
-        style={{ background: "transparent", boxShadow: "none" }}
+        style={{background:"transparent", backdropFilter: !trigger ? "blur(0px)" :"blur(5px)", boxShadow: "none" }}
       >
         <Toolbar sx={{ mr: { xs: "1%", md: "7%" }, ml: "2%" }}>
           <IconButton
@@ -53,7 +56,7 @@ export default function DrawerAppBar() {
               display: { xs: mobileOpen?  "none" :"block"},
               // color: theme.palette.primary.main,
               color: "black",
-              my: "1.5rem",
+              my: "1.2rem",
               cursor: "pointer",
             }}
           >
