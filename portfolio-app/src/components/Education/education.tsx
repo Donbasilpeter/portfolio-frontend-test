@@ -48,6 +48,23 @@ const Education = () => {
         >
           <Typography variant="h3"> Education</Typography>
           <Grid container>
+          <Grid xs={12} md={12}>
+            <Box sx={{ pt: { xs: "5rem", md: "3rem" } }}>
+            <Typography
+              sx={{ pb: { xs: 1 } }}
+              color="primary"
+              variant="h5"
+            >
+              {" "}
+              Full Stack Software Development
+            </Typography>
+            <Typography color={theme.palette.grey[500]} variant="body1">
+              {" "}
+              Ontario Graduate Certificate,<br></br>Lambton College, Sarnia<br></br>2005-2015<br></br>
+              CGPA:10
+            </Typography>
+          </Box>
+            </Grid>
             <Grid xs={12} md={12}>
             <Box sx={{ pt: { xs: "5rem", md: "3rem" } }}>
             <Typography
@@ -83,30 +100,7 @@ const Education = () => {
             </Typography>
           </Box>
             </Grid>
-            <Grid xs={12} md={12}>
-            <Box sx={{ pt: { xs: "5rem", md: "3rem" } }}>
-            <Typography
-              sx={{ pb: { xs: 1 } }}
-              color="primary"
-              variant="h5"
-            >
-              {" "}
-              CBSE Board (I-X)
-            </Typography>
-            <Typography color={theme.palette.grey[500]} variant="body1">
-              {" "}
-              Queen Mary Public School, Panicankudy<br></br>2005-2015<br></br>
-              CGPA:10
-            </Typography>
-          </Box>
-            </Grid>
-
-
-
           </Grid>
-
-
- 
         </Box>
       </Grid>
     </>
