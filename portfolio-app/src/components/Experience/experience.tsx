@@ -47,49 +47,74 @@ const Experience = () => {
           }}
 
         >
-          <Typography color="primary" variant="h3"> Experience</Typography>
+          <Typography color="primary" variant="h3"> Projects</Typography>
           <Grid container>
+          <Grid xs={12} md={12}>
+            <Box sx={{ pt: { xs: "5rem", md: "5rem" },pr: { xs: "1rem", md: "10rem" }  }}>
+            <Typography   sx={{ pb: { xs: 1 } }}  variant="h5">
+              {" "}
+              CaseFlow (June 2022 - july 2023) 
+            </Typography>
+            <Typography color={theme.palette.grey[500]} variant="body1">
+              {" "}
+              AOT Technologies, Trivandrum, Kerala, <br></br>
+              Designed and developed Case Flow , an open- source generic Case Management application built on top of Formsflow.ai using NestUS, React, PostgreSQL, Flask
+            </Typography>
+          </Box>
+            </Grid>
+            <Grid xs={12} md={12}>
+            <Box sx={{ pt: { xs: "5rem", md: "5rem" }, pr: { xs: "1rem", md: "10rem" } }}>
+            <Typography   sx={{ pb: { xs: 1} }} variant="h5">
+              {" "}
+              Formsflow.ai (Apr 2022 - May 2022)
+            </Typography>
+            <Typography color={theme.palette.grey[500]} variant="body1">
+              {" "}
+              AOT Technologies, Trivandrum, Kerala, <br></br>
+              developed and tested Forms-flow web application using React Testing
+            </Typography>
+          </Box>
+            </Grid>
             <Grid xs={12} md={12}>
             <Box sx={{ pt: { xs: "5rem", md: "3rem" },  pr: { xs: "1rem", md: "10rem" } }}>
             <Typography     sx={{ pb: { xs: 1} }} variant="h5">
               {" "}
-              MODUURN project (October 2021 to March 2022 )
+              MODUURN project (Oct 2021 - Mar 2022 )
             </Typography>
             <Typography color={theme.palette.grey[500]} variant="body1">
               {" "}
-              Designed and developed the web application for Moduurn mobile
-              ordering platform using Angular, Node.js, MongoDB
+              AOT Technologies, Trivandrum, Kerala, <br></br>
+              Designed and developed the web application for Moduurn mobile ordering platform using Angular, Node.js, MongoDB.
             </Typography>
           </Box>
             </Grid>
+                
             <Grid xs={12} md={12}>
-
-            <Box sx={{ pt: { xs: "5rem", md: "5rem" }, pr: { xs: "1rem", md: "10rem" } }}>
-            <Typography   sx={{ pb: { xs: 1} }} variant="h5">
+            <Box sx={{ pt: { xs: "5rem", md: "5rem" },pr: { xs: "1rem", md: "10rem" }  }}>
+            <Typography   sx={{ pb: { xs: 1 } }}  variant="h5">
               {" "}
-              Formsflow.ai (April 2022 to may 2022)
+              Stock Market Portfolio (Feb 2021 - May 2021) 
             </Typography>
             <Typography color={theme.palette.grey[500]} variant="body1">
               {" "}
-              tested Formsflow web application using React Testing Library
+              Developed a web application to analyze the past performance of stock portfolio by entering stock name and weightage. The app was built using MERN stack
             </Typography>
           </Box>
             </Grid>
-
+            
             <Grid xs={12} md={12}>
             <Box sx={{ py: { xs: "5rem", md: "5rem" },pr: { xs: "1rem", md: "10rem" }  }}>
             <Typography   sx={{ pb: { xs: 1 } }}  variant="h5">
               {" "}
-              CaseFlow (June 2022 to Present) -
+              Skin Disease Prediction Mobile App (June 2020 - Sept 2020) 
             </Typography>
             <Typography color={theme.palette.grey[500]} variant="body1">
               {" "}
-              Designs and develops Case Flow , an open- source generic Case
-              Management application built on top of Formsflow.ai using NestUS,
-              React, PostgreSQL, Flask 
+             An app to detect skin cancer using AI, developed by Android Studio, Python, Tensorflow, Keras, etc.
             </Typography>
           </Box>
             </Grid>
+            
 
           </Grid>
 
