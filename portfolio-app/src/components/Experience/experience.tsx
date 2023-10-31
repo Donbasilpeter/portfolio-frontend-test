@@ -106,11 +106,11 @@ const Experience = () => {
             <Box sx={{ py: { xs: "5rem", md: "5rem" },pr: { xs: "1rem", md: "10rem" }  }}>
             <Typography   sx={{ pb: { xs: 1 } }}  variant="h5">
               {" "}
-              Skin Disease Prediction Mobile App (June 2020 - Sept 2020) 
+              Skin Disease Detection App (June 2020 - Sept 2020) 
             </Typography>
             <Typography color={theme.palette.grey[500]} variant="body1">
               {" "}
-             An app to detect skin cancer using AI, developed by Android Studio, Python, Tensorflow, Keras, etc.
+             An app to detect skin disease using AI, developed by Android Studio, Python, Tensorflow, Keras, etc.
             </Typography>
           </Box>
             </Grid>
