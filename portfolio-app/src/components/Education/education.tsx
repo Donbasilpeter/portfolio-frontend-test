@@ -60,8 +60,8 @@ const Education = () => {
             </Typography>
             <Typography color={theme.palette.grey[500]} variant="body1">
               {" "}
-              Ontario Graduate Certificate,<br></br>Lambton College, Sarnia<br></br>2005-2015<br></br>
-              CGPA:10
+              Ontario Graduate Certificate,<br></br>Lambton College, Sarnia<br></br>2023-Present<br></br>
+     
             </Typography>
           </Box>
             </Grid>
